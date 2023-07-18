@@ -16,7 +16,7 @@
   --bg-header-color:#fed7db;
   --logo-header-color:#e45175;
   --a-navbar-color:#e45175;
-  --header-navbar-color:#000;
+  --header-navbar-color:#fed7db;
   --a-hover-navbar-color:#703A03;
   --about-text-color:#e45175;
   --heading-span-color:#e45175;
@@ -31,7 +31,7 @@
   --col-hover-color:#e45175;
   --col-social-hover-color:#703A03;
   --hr-color:#703A03;
-  --shadow-color: #000;
+  --shadow-color: #7b7a7a;
   --menu-icon-color:#e45175;
   --big-font:5rem;
   --h2-font:2.25rem;
@@ -80,7 +80,7 @@ header{
 #menu-icon {
   font-size: 2rem;
   cursor: pointer;
-  display: none;
+  display: none; 
 }
 section {
   padding: 70px 17%;
@@ -131,7 +131,7 @@ section {
   max-width: 100%;
   width: 580px;
   height: auto;
-  filter:drop-shadow(20px 20px 20px var(--shadow-color)) 
+  filter:drop-shadow(20px 20px 20px var(--shadow-color)); 
 }
 
 .about-text span{
@@ -214,7 +214,7 @@ section {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(240px, auto));
   grid-gap: 1.5rem;
-  margin: 4rem;
+  margin: 2.5rem;
 }
 .s-box {
   text-align: center;
@@ -243,6 +243,14 @@ section {
   font-size: 2rem;
   color: var(--text-menu-box-color);
   margin-bottom: 30px;
+}
+.deponame {
+  display: flex;
+  align-items: flex-end;
+  justify-content: end;
+}
+.deponame b {
+  color: #000;
 }
 
 .footer {
@@ -324,6 +332,9 @@ hr {
     --big-font:3.5rem;
     --h2-fonte:2rem;
   }
+  .footer {
+    padding: 50px 5% 40px;
+  }
 }  
 
 @media (max-width: 1140px) {
@@ -345,8 +356,8 @@ hr {
       background:var(--header-navbar-color);
       transition: .3s;
     }
-    header .navbar .active {
-      top: 70px;
+    header .navbar.active {
+      top: 50px;
     }
     .navbar a {
       padding: 1.5rem;
@@ -354,7 +365,15 @@ hr {
     }
     .col {
       width: 50%;
-      margin-bottom: 10px;
+      margin-bottom: 20px;
+    }
+    .main-footer {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, auto));
+      gap: 2rem;
+    }
+    .logo {
+      font-size: 1.5rem;
     }
 
 }
@@ -375,14 +394,22 @@ hr {
     order: 2;
   }
   section {
-    padding: 100px 7%;
+    padding: 100px 0 5%;
   }
+  .logo {
+    font-size: 1.5rem;
+  }
+ 
 }
 
 @media (max-width: 575px) {
   .col {
     width: 100%;
   }
+  .logo {
+    font-size: 1.5rem;
+  }
+  
 }
 
 @media (max-width: 378px) {
@@ -392,4 +419,6 @@ hr {
   .logo {
     font-size: 1.5rem;
   }
+
+
 }
