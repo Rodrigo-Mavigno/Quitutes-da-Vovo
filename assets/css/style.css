@@ -34,6 +34,7 @@
   --hr-color:#703A03;
   --shadow-color: #7b7a7a;
   --menu-icon-color:#e45175;
+  --deponame-color:#000;
   --big-font:5rem;
   --h2-font:2.25rem;
   --p-font:0.9rem;
@@ -253,7 +254,7 @@ section {
   justify-content: center;
 }
 .deponame b {
-  color: #000;
+  color: var(--deponame-color);
 }
 
 .footer {
