@@ -99,6 +99,7 @@ section {
   max-width: 100%;
   width: 600px;
   height: auto;
+  background-image: url();
 }
 .home-text h1 {
   font-size: var(--big-font);
