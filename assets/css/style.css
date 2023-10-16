@@ -15,6 +15,7 @@
   --body-color: #703A03;
   --bg-header-color:#fed7db;
   --logo-header-color:#e45175;
+  --boxshadow-header:rgba(0,0,0,.6);
   --a-navbar-color:#e45175;
   --header-navbar-color:#fed7db;
   --a-hover-navbar-color:#703A03;
@@ -58,6 +59,7 @@ header{
   justify-content: space-between;
   padding: 30px 170px;
   background: var(--bg-header-color);
+  box-shadow: 0px 0px 20px var(--boxshadow-header);
 }
 .logo {
   color: var(--logo-header-color);
@@ -247,8 +249,8 @@ section {
 }
 .deponame {
   display: flex;
-  align-items: flex-end;
-  justify-content: end;
+  align-items: center;
+  justify-content: center;
 }
 .deponame b {
   color: #000;
@@ -270,6 +272,7 @@ section {
 }
 .copy a {
   color: var(--copy-a-color);
+  cursor: pointer;
 }
 .copy a:hover {
   color: var(--copy-a-hover-color);
@@ -293,6 +296,7 @@ section {
   display: block;
   text-transform: capitalize;
   transition: .4s;
+  cursor: pointer;  
 }
 .col ul li a:hover {
   color: var(--col-hover-color);
